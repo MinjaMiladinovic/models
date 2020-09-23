@@ -716,8 +716,8 @@ class BertPretrainLossAndMetricLayer(tf.keras.layers.Layer):
 
   """Returns layer that computes custom loss and metrics for pretraining."""
 
-  def __MMinit__(self, vocab_size, **kwargs):
-    super(BertPretrainLossAndMetricLayer, self).__MMinit__(**kwargs)
+  def __init__(self, vocab_size, **kwargs):
+    super(BertPretrainLossAndMetricLayer, self).__init__(**kwargs)
     self._vocab_size = vocab_size
     self.config = {
         'vocab_size': vocab_size,
