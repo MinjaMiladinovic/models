@@ -30,6 +30,7 @@ from official.nlp.modeling import networks
 
 
 class BertPretrainLossAndMetricLayer(tf.keras.layers.Layer):
+class BertPretrainLossAndMetricLayer(tf.keras.layers.Layer):
   """Returns layer that computes custom loss and metrics for pretraining."""
 
   def __init__(self, vocab_size, **kwargs):
